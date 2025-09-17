@@ -12,7 +12,7 @@ if "cart" not in st.session_state:
 # Load product data
 def load_products():
     try:
-        df_products = pd.read_excel("data/products.xlsx")
+        df_products = pd.read_excel("products.xlsx")
         expected_columns = ["SL", "Product Name", "Product code", "price", "amount"]
         if not all(col in df_products.columns for col in expected_columns):
             st.error("Excel file doesn't have all required columns.")
@@ -211,3 +211,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
