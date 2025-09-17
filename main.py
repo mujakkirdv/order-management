@@ -212,3 +212,25 @@ def main():
 if __name__ == "__main__":
     main()
 
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #0fa8f5;
+        color: #e4e4ed;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 16px;
+        box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+    }
+    </style>
+    <div class="footer">
+        © 2025 Mujakkir Ahmad | All Rights Reserved
+    </div>
+    """,
+    unsafe_allow_html=True
+)
